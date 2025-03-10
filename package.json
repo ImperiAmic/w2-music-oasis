@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
-    "start": "node .",
-    "start:dev": "node --watch .",
+    "start": "serve public",
     "build": "tsc",
     "build:dev": "tsc --watch",
     "test": "node dist/js/analytics/__tests__",
@@ -13,8 +12,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "module",
   "description": "",
   "devDependencies": {
+    "serve": "^14.2.4",
     "typescript": "^5.8.2"
   }
 }
