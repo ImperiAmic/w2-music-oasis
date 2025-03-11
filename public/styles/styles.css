@@ -1,0 +1,39 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: grid;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: space-around;
+}
+
+@media (max-width: 500px) {
+  .desktop {
+    display: none;
+  }
+
+  header {
+    max-width: 365px;
+    height: 61px;
+  }
+}
+
+@media (min-width: 500px) {
+  .mobile {
+    display: none;
+  }
+
+  header {
+    max-width: 1920px;
+    height: 90px;
+  }
+}
