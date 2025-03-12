@@ -81,11 +81,11 @@ h2 {
 
 .record-type {
   color: rgba(9, 178, 114, 1);
-  background-color: rgba(231, 248, 241, 1);
   font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
+  background-color: rgba(231, 248, 241, 1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,6 +93,24 @@ h2 {
   height: 30px;
   margin-top: 13px;
   border-radius: 4px;
+}
+.record-discount {
+  color: rgba(207, 30, 31, 1);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: rgba(251, 233, 233, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 114px;
+  height: 30px;
+  border-radius: 4px;
+  position: absolute;
+  margin-left: 16px;
+  margin-top: 16px;
+  display: none;
 }
 
 @media (width > 500px) {
