@@ -7,6 +7,7 @@
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  padding-inline: 2%;
 }
 
 h1 {
@@ -35,13 +36,38 @@ header {
   justify-content: center;
 }
 
+.container-cards {
+  display: grid;
+}
+
+.card {
+  border: 1px solid #e5e5e5;
+  width: 343px;
+  height: 502px;
+  border-radius: 8px;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: inherit;
+  }
+}
+
 @media (width > 500px) {
+  body {
+    padding-inline: 5%;
+  }
+
   header {
     height: 90px;
   }
 
   .container-title {
     justify-content: flex-start;
-    margin-left: 5%;
+  }
+
+  .container-cards {
+    justify-content: flex-start;
   }
 }
