@@ -1,12 +1,10 @@
-*,
-::before,
-::after {
+* {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   padding-inline: 2%;
 }
 
