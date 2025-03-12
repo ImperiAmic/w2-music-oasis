@@ -64,19 +64,35 @@ h2 {
     border-radius: inherit;
   }
 }
+
 .info {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 16px;
   color: rgba(31, 44, 77, 1);
 
-  .name {
+  .record-name {
     font-size: 1.125rem;
     font-weight: 600;
     align-items: center;
-
     margin: 0;
   }
+}
+
+.record-type {
+  color: rgba(9, 178, 114, 1);
+  background-color: rgba(231, 248, 241, 1);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 105px;
+  height: 30px;
+  margin-top: 13px;
+  border-radius: 4px;
 }
 
 @media (width > 500px) {
