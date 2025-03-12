@@ -63,7 +63,7 @@ h2 {
   border-radius: 8px;
   margin: 0 auto;
 
-  img {
+  .record-cover {
     width: 100%;
     object-fit: contain;
     border-radius: inherit;
@@ -75,13 +75,13 @@ h2 {
   padding-right: 16px;
   padding-top: 16px;
   color: rgba(31, 44, 77, 1);
+}
 
-  .record-name {
-    font-size: 1.125rem;
-    font-weight: 600;
-    align-items: center;
-    margin: 0;
-  }
+.record-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  align-items: center;
+  margin: 0;
 }
 
 .record-type {

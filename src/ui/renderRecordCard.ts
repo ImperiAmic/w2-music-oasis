@@ -3,4 +3,9 @@ import { Record } from "../records/types.js";
 export const renderRecordCard = (
   record: Record,
   recordCard: HTMLElement
-): void => {};
+): void => {
+  /* const recordCover = recordCard.querySelector(
+    ".record-cover"
+  ) as HTMLImageElement;
+  recordCover.src = "./images/covers/marife-de-triana-marife-de-triana.webp"; */
+};
