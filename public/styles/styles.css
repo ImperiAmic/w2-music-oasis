@@ -67,6 +67,7 @@ ul {
 
 .records {
   display: grid;
+  gap: 10px;
 }
 
 .record {
@@ -128,7 +129,10 @@ ul {
   position: absolute;
   margin-left: 16px;
   margin-top: 16px;
+<<<<<<< HEAD
   /* display: none; */
+=======
+>>>>>>> c3bd64a (Fix records grid styles)
 }
 
 .record-prices {
@@ -196,6 +200,17 @@ ul {
   }
 
   .records {
+    margin: 0;
+    gap: 20px;
     justify-content: flex-start;
+    display: flex;
+    min-width: 375px;
+    flex-wrap: wrap;
+    padding-left: 149px;
+    padding-right: 149px;
+  }
+
+  .record {
+    margin: 0;
   }
 }
