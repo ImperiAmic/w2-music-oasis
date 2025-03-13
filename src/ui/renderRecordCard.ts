@@ -4,8 +4,8 @@ export const renderRecordCard = (
   record: Record,
   recordCard: HTMLElement
 ): void => {
-  /* const recordCover = recordCard.querySelector(
+  const recordCover = recordCard.querySelector(
     ".record-cover"
   ) as HTMLImageElement;
-  recordCover.src = "./images/covers/marife-de-triana-marife-de-triana.webp"; */
+  recordCover.src = record.coverUrl;
 };
