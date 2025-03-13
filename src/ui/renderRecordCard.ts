@@ -8,4 +8,7 @@ export const renderRecordCard = (
     ".record-cover"
   ) as HTMLImageElement;
   recordCover.src = record.coverUrl;
+
+  const infoRecord = recordCard.querySelector(".record-name")!;
+  infoRecord.textContent = `${record.name} (${record.artist})`;
 };
