@@ -112,23 +112,4 @@ export const records: Record[] = [
     price: 23.99,
     isRecordOfTheMonth: false,
   },
-  {
-    id: 13,
-    name: "Agila",
-    artist: "Extremoduro",
-    coverUrl: "images/covers/extremoduro-aguila.webp",
-    type: "DIGITAL",
-    price: 59.99,
-    originalPrice: 70.99,
-    isRecordOfTheMonth: false,
-  },
-  {
-    id: 14,
-    name: "Un día en el mundo",
-    artist: "Vetusta Morla",
-    coverUrl: "images/covers/vetusta-morla-un-dia-en-el-mundo.webp",
-    type: "DIGITAL",
-    price: 19.99,
-    isRecordOfTheMonth: false,
-  },
 ];
