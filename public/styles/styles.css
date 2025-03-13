@@ -128,7 +128,7 @@ ul {
   position: absolute;
   margin-left: 16px;
   margin-top: 16px;
-  display: none;
+  /* display: none; */
 }
 
 .record-prices {
