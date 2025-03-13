@@ -16,4 +16,14 @@ export const renderRecordCard = (
   if (!record.originalPrice) {
     discountRecord.remove();
   }
+
+  const typeDigitalRecord = recordCard.querySelector(".digital")!;
+  if (record.type === "VINYL") {
+    typeDigitalRecord.remove();
+  }
+
+  const typeVinylRecord = recordCard.querySelector(".vinyl")!;
+  if (record.type === "DIGITAL") {
+    typeVinylRecord?.remove();
+  }
 };
