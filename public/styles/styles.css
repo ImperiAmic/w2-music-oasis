@@ -112,6 +112,7 @@ ul {
   height: 30px;
   margin-top: 13px;
   border-radius: 4px;
+  position: relative;
 }
 .record-discount {
   color: rgba(207, 30, 31, 1);
@@ -204,9 +205,5 @@ ul {
     flex-wrap: wrap;
     padding-left: 149px;
     padding-right: 149px;
-  }
-
-  .record {
-    margin: 0;
   }
 }
