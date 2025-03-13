@@ -125,8 +125,8 @@ export const records: Record[] = [
   {
     id: 14,
     name: "Un día en el mundo",
-    artist: "images/covers/vetusta-morla-un-dia-en-el-mundo.webp",
-    coverUrl: "URL",
+    artist: "Vetusta Morla",
+    coverUrl: "images/covers/vetusta-morla-un-dia-en-el-mundo.webp",
     type: "DIGITAL",
     price: 19.99,
     isRecordOfTheMonth: false,
