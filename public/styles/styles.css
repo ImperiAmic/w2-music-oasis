@@ -83,7 +83,7 @@ ul {
   }
 }
 
-.info {
+.record-info {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 16px;
@@ -131,8 +131,55 @@ ul {
   display: none;
 }
 
+<<<<<<< HEAD
 @media screen and (width > 500px) {
   .container-header {
+=======
+.record-prices {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-orginal {
+  color: var(--main-color);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.record-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.record-actions {
+  display: flex;
+  justify-content: space-around;
+  height: 24px;
+  width: 115px;
+}
+
+.record-button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.buy-button {
+  font-family: inherit;
+  color: var(--main-color);
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding: 0;
+}
+
+@media (width > 500px) {
+  header {
+>>>>>>> 8d262a0 (Add price and icon cart and heart)
     height: 90px;
 
     h1 {
