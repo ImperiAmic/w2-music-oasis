@@ -136,10 +136,15 @@ ul {
   flex-direction: column;
 }
 
-.price-orginal {
-  color: var(--main-color);
+.price {
+  color: #cf1e1f;
   font-size: 1.125rem;
   font-weight: 700;
+}
+
+.price-original {
+  color: #6b7999;
+  text-decoration: line-through;
 }
 
 .record-footer {

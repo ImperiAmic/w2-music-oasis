@@ -12,6 +12,11 @@ export const renderRecordCard = (
   const infoRecord = recordCard.querySelector(".record-name")!;
   infoRecord.textContent = `${record.name} (${record.artist})`;
 
+  const originalPriceRecord = recordCard.querySelector(".price-original")!;
+  if (!record.originalPrice) {
+    originalPriceRecord.remove();
+  }
+
   const discountRecord = recordCard.querySelector(".record-discount")!;
   if (!record.originalPrice) {
     discountRecord.remove();
