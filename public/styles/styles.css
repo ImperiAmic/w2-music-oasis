@@ -131,10 +131,6 @@ ul {
   display: none;
 }
 
-<<<<<<< HEAD
-@media screen and (width > 500px) {
-  .container-header {
-=======
 .record-prices {
   display: flex;
   flex-direction: column;
@@ -178,8 +174,7 @@ ul {
 }
 
 @media (width > 500px) {
-  header {
->>>>>>> 8d262a0 (Add price and icon cart and heart)
+  .container-header {
     height: 90px;
 
     h1 {
