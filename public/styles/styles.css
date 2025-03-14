@@ -1,14 +1,14 @@
-* {
-  box-sizing: border-box;
-}
-
 :root {
   --main-color: #1f2c4d;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 main {
