@@ -33,7 +33,7 @@ ul {
   flex-wrap: wrap;
   gap: 12px;
   width: 100%;
-  height: 61px;
+  height: 3.813rem;
   border-bottom: 1px solid #e5e5e5;
 
   h1 {
@@ -68,12 +68,14 @@ ul {
 .records {
   display: grid;
   gap: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .record {
   border: 1px solid #e5e5e5;
   max-width: 343px;
-  height: 502px;
+  max-height: 502px;
   border-radius: 8px;
   margin: 0 auto;
 
@@ -114,6 +116,7 @@ ul {
   border-radius: 4px;
   position: relative;
 }
+
 .record-discount {
   color: rgba(207, 30, 31, 1);
   font-size: 0.875rem;
@@ -191,9 +194,10 @@ ul {
   .container-title {
     justify-content: flex-start;
     padding-top: 60px;
+    padding-left: 16px;
+    margin-bottom: 60px;
 
     h2 {
-      padding-left: 149px;
       font-weight: 700;
       font-size: 2.25rem;
       line-height: 40px;
@@ -204,11 +208,8 @@ ul {
   .records {
     margin: 0;
     gap: 20px;
-    justify-content: flex-start;
-    display: flex;
-    min-width: 375px;
-    flex-wrap: wrap;
-    padding-left: 149px;
-    padding-right: 149px;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    justify-content: center;
   }
 }
