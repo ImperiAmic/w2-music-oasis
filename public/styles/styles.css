@@ -70,15 +70,12 @@ ul {
   gap: 10px;
   padding-left: 16px;
   padding-right: 16px;
-
-  @media (width > 500px) {
-  }
 }
 
 .record {
   border: 1px solid #e5e5e5;
   max-width: 343px;
-  height: 502px;
+  max-height: 502px;
   border-radius: 8px;
   margin: 0 auto;
 
