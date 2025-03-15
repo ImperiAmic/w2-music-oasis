@@ -211,10 +211,6 @@ ul {
   margin: 0 auto;
 }
 
-.hide {
-  display: none;
-}
-
 .record-cover {
   width: 100%;
   object-fit: contain;

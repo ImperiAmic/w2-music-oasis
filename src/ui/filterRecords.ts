@@ -18,3 +18,24 @@ export const vinylRecords = records.filter((record) => record.type === "VINYL");
 export const digitalRecords = records.filter(
   (record) => record.type === "DIGITAL"
 );
+
+const filterAllButton = document.querySelector(
+  "#filter-all"
+) as HTMLButtonElement;
+filterAllButton.addEventListener("click", () => {
+  renderRecordsList(records);
+});
+
+const filterVinylButton = document.querySelector(
+  "#filter-vinyl"
+) as HTMLButtonElement;
+filterVinylButton.addEventListener("click", () => {
+  renderRecordsList(vinylRecords);
+});
+
+const filterDigitalButton = document.querySelector(
+  "#filter-digital"
+) as HTMLButtonElement;
+filterDigitalButton.addEventListener("click", () => {
+  renderRecordsList(digitalRecords);
+});

@@ -5,6 +5,6 @@ export type Record = {
   coverUrl: string;
   type: "VINYL" | "DIGITAL";
   price: number;
-  originalPrice?: number;
+  originalPrice: number | "";
   isRecordOfTheMonth: boolean;
 };

@@ -8,6 +8,7 @@ export const records: Record[] = [
     coverUrl: "images/covers/rolling-stones-briges-babylon.webp",
     type: "VINYL",
     price: 21.99,
+    originalPrice: "",
     isRecordOfTheMonth: false,
   },
   {
@@ -27,6 +28,7 @@ export const records: Record[] = [
     coverUrl: "images/covers/temple-of-the-dog-temple-of-the-dog.webp",
     type: "DIGITAL",
     price: 23.99,
+    originalPrice: "",
     isRecordOfTheMonth: false,
   },
   {
@@ -46,6 +48,7 @@ export const records: Record[] = [
     coverUrl: "images/covers/marife-de-triana-marife-de-triana.webp",
     type: "VINYL",
     price: 219.99,
+    originalPrice: "",
     isRecordOfTheMonth: false,
   },
   {
@@ -55,6 +58,7 @@ export const records: Record[] = [
     coverUrl: "images/covers/robin-s-show-me-love.webp",
     type: "DIGITAL",
     price: 19.99,
+    originalPrice: "",
     isRecordOfTheMonth: false,
   },
   {
@@ -64,6 +68,7 @@ export const records: Record[] = [
     coverUrl: "images/covers/daft-punk-homework.webp",
     type: "VINYL",
     price: 24.59,
+    originalPrice: "",
     isRecordOfTheMonth: false,
   },
   {
@@ -73,6 +78,7 @@ export const records: Record[] = [
     coverUrl: "images/covers/georde-dann-el-chiringuito.webp",
     type: "VINYL",
     price: 1.99,
+    originalPrice: "",
     isRecordOfTheMonth: true,
   },
   {
@@ -82,6 +88,7 @@ export const records: Record[] = [
     coverUrl: "images/covers/deep-purple-deep-purple-in-rock.webp",
     type: "VINYL",
     price: 27.49,
+    originalPrice: "",
     isRecordOfTheMonth: false,
   },
   {
@@ -91,6 +98,7 @@ export const records: Record[] = [
     coverUrl: "images/covers/led-zepelin-iv-led-zepelin.webp",
     type: "VINYL",
     price: 34.99,
+    originalPrice: "",
     isRecordOfTheMonth: false,
   },
   {
@@ -110,6 +118,7 @@ export const records: Record[] = [
     coverUrl: "images/covers/aute-de-paso-libertad.webp",
     type: "DIGITAL",
     price: 23.99,
+    originalPrice: "",
     isRecordOfTheMonth: false,
   },
 ];
