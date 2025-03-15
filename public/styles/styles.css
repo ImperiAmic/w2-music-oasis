@@ -114,6 +114,7 @@ ul {
   gap: 10px;
   padding-left: 16px;
   padding-right: 16px;
+  margin-bottom: 45px;
 }
 
 .record {
@@ -240,5 +241,6 @@ ul {
     grid-template-columns: repeat(3, 1fr);
     display: grid;
     justify-content: center;
+    margin-bottom: 112px;
   }
 }
