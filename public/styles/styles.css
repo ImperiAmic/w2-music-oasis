@@ -27,7 +27,7 @@ ul {
   flex-wrap: wrap;
   gap: 12px;
   width: 100%;
-  height: 61px;
+  height: 3.813rem;
   border-bottom: 1px solid #e5e5e5;
 
   @media (width > 500px) {
@@ -146,6 +146,8 @@ ul {
 .records {
   display: grid;
   gap: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
 
   @media (width > 500px) {
     margin: 0;
@@ -162,7 +164,7 @@ ul {
 .record {
   border: 1px solid #e5e5e5;
   max-width: 343px;
-  height: 502px;
+  max-height: 502px;
   border-radius: 8px;
   margin: 0 auto;
 }
@@ -203,6 +205,7 @@ ul {
   border-radius: 4px;
   position: relative;
 }
+
 .record-discount {
   color: rgba(207, 30, 31, 1);
   font-size: 0.875rem;
@@ -266,4 +269,36 @@ ul {
   letter-spacing: 1px;
   font-weight: 600;
   padding: 0;
+}
+
+@media (width > 500px) {
+  .container-header {
+    height: 90px;
+
+    h1 {
+      display: inline;
+    }
+  }
+
+  .container-title {
+    justify-content: flex-start;
+    padding-top: 60px;
+    padding-left: 16px;
+    margin-bottom: 60px;
+
+    h2 {
+      font-weight: 700;
+      font-size: 2.25rem;
+      line-height: 40px;
+      letter-spacing: 0px;
+    }
+  }
+
+  .records {
+    margin: 0;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    justify-content: center;
+  }
 }
