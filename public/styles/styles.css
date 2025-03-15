@@ -117,55 +117,50 @@ ul {
 }
 
 .main-header {
-  width: 100%;
-  flex-direction: column;
-  justify-content: start;
+  margin: 0 auto;
   padding-top: 45px;
 
+  @media (width > 500px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 66px;
+    padding-left: 149px;
+    padding-right: 149px;
+  }
+}
+
+.main-header__title {
+  text-align: center;
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 34px;
+  letter-spacing: 0px;
+  padding-bottom: 45px;
+}
+
+@media (width > 500px) {
   .main-header__title {
-    text-align: center;
-    margin: 0;
     font-weight: 700;
-    font-size: 1.75rem;
-    line-height: 34px;
+    font-size: 2.25rem;
+    line-height: 40px;
     letter-spacing: 0px;
   }
 }
 
-@media (width > 500px) {
-  .main-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0;
-    height: 40px;
-    padding-top: 60px;
-    padding-left: 16px;
-    margin-bottom: 60px;
-    margin-top: 60px;
-  }
-  @media (width > 500px) {
-    .main-header__title {
-      font-weight: 700;
-      font-size: 2.25rem;
-      line-height: 40px;
-      letter-spacing: 0px;
-    }
-  }
-}
-
 .main-header__filters {
-  font-family: inherit;
   display: flex;
   justify-content: flex-start;
   margin: 0 auto;
   max-width: 100%;
-  padding: 21.5px;
   gap: 15px;
+  padding-left: 21.5px;
 }
 
 .main-header__filter {
+  font-family: inherit;
   background: none;
   font-size: 1.125rem;
   font-weight: 700;
@@ -183,28 +178,23 @@ ul {
 .records {
   display: grid;
   gap: 10px;
-  padding-left: 16px;
+  justify-content: center;
   margin-bottom: 45px;
-  padding-right: 16px;
 
   @media (width > 500px) {
-    margin: 0;
-    gap: 20px;
-    justify-content: flex-start;
-    display: flex;
-    min-width: 375px;
-    flex-wrap: wrap;
-    padding-left: 149px;
-    padding-right: 149px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin-bottom: 112px;
+    margin-top: 0;
   }
 }
 
 .record {
   border: 1px solid #e5e5e5;
   max-width: 100%;
-  max-height: 502px;
   border-radius: 8px;
-  margin: 0 auto;
 }
 
 .record-cover {
@@ -317,12 +307,76 @@ ul {
       display: inline;
     }
   }
-  .records {
-    margin: 0 auto;
-    gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-    display: grid;
+}
+
+@media (width > 500px) {
+  .sidebar {
+    display: block;
+  }
+
+  .record-of-the-month {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-left: 47px;
+    width: 359px;
+  }
+
+  .record-of-the-month__title {
+    color: rgba(31, 44, 77, 1);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .record-of-the-month__cover {
+    border-radius: 5px;
+    width: auto;
+  }
+
+  div.record-of-the-month__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+
+  .record-of-the-month__name {
+    padding-right: 16px;
+    color: rgba(31, 44, 77, 1);
+    font-size: 1.25rem;
+    letter-spacing: 0px;
+    font-weight: 600;
+    width: 163px;
+    text-align: end;
+  }
+
+  .record-of-the-month__price {
+    color: rgba(31, 44, 77, 1);
+    font-size: 1.25rem;
+    letter-spacing: 0px;
+    font-weight: 700;
+  }
+
+  .record-actions__sidebar {
+    display: flex;
+    justify-content: space-around;
+    height: 24px;
+    width: 115px;
+    border: none;
+    margin: 0;
+  }
+
+  .record-of-the-month__card {
+    display: flex;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
     justify-content: center;
-    margin-bottom: 112px;
+    padding: 0 149px;
   }
 }
