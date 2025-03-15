@@ -7,7 +7,7 @@
   <title>Music Oasis - Music Store</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <link rel="shortcut icon" href="/images/favicon.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="/images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/styles/styles.css">
   <script type="module" src="/js/index.js"></script>
 </head>
@@ -28,8 +28,15 @@
     </div>
   </header>
   <main>
-    <header class="container-title">
-      <h1 class="title">Records</h1>
+    <header class="main-header">
+      <h1 class="main-hlader__title">Records</h1>
+      <nav>
+        <ul class="main-header__filters">
+          <li><button class="main-header__filter main-header__filter--active">All</button></li>
+          <li><button class="main-header__filter main-header__filter--active">Vinyl</button></li>
+          <li><button class="main-header__filter main-header__filter--active">Digital</button></li>
+        </ul>
+      </nav>
     </header>
     <ul class="records">
       <li class="record">
@@ -42,7 +49,6 @@
               <span class="record-type vinyl">vinyl</span>
               <span class="record-type digital">digital</span>
             </div>
-
             <div class="record-footer">
               <div class="record-prices">
                 <span class="price">$23.99</span>
