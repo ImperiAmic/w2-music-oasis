@@ -5,21 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music Oasis - Music Store</title>
-  <link rel="shortcut icon" href="/images/favicon.svg" type="image/x-icon">
-  <link rel="stylesheet" href="/styles/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <link rel="shortcut icon" href="/images/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="/styles/styles.css">
   <script type="module" src="/js/index.js"></script>
 </head>
 
 <body>
-  <header class="container-header" aria-label="Music Oasis Store">
-    <img src="./images/header/logo.svg" alt="Music Oasis Store">
-    <h1>Music Oasis</h1>
+  <header class="header" aria-label="Music Oasis Store">
+    <div class="header__search">
+      <img class="button__search-icon" src="images/resources/search.svg" alt="Search button">
+      <span class="header__search-text">Search</span>
+    </div>
+    <div class="header__logo">
+      <img class="header__icon" src="/images/header/logo.svg" alt="Music Oasis Store">
+      <span class="header__text">Music Oasis</span>
+    </div>
+    <div class="header__cart">
+      <img class="button__cart-icon" src="images/resources/cart.svg" alt="Cart button">
+      <span class="header__cart-text">Cart</span>
+    </div>
   </header>
   <main>
     <header class="container-title">
-      <h2>Records</h2>
+      <h1 class="title">Records</h1>
     </header>
     <ul class="records">
       <li class="record">
@@ -27,7 +37,7 @@
           <span class="record-discount">discount</span>
           <img class="record-cover" src="" alt="">
           <div class="record-info">
-            <h3 class="record-name">Franz Ferdinand (The Human Fear)</h3>
+            <h2 class="record-name">Franz Ferdinand (The Human Fear)</h2>
             <div class="record-type">
               <span class="record-type vinyl">vinyl</span>
               <span class="record-type digital">digital</span>
