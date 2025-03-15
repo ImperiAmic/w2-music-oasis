@@ -7,6 +7,7 @@ export const renderRecordCard = (
   const recordCover = recordCard.querySelector(
     ".record-cover"
   ) as HTMLImageElement;
+
   recordCover.src = record.coverUrl;
   recordCover.alt = `${record.artist} ${record.name}`;
 
@@ -15,17 +16,17 @@ export const renderRecordCard = (
 
   const originalPriceRecord = recordCard.querySelector(".price-original")!;
   if (!record.originalPrice) {
-    originalPriceRecord.remove();
+    originalPriceRecord?.remove();
   }
 
   const discountRecord = recordCard.querySelector(".record-discount")!;
   if (!record.originalPrice) {
-    discountRecord.remove();
+    discountRecord?.remove();
   }
 
   const typeDigitalRecord = recordCard.querySelector(".digital")!;
   if (record.type === "VINYL") {
-    typeDigitalRecord.remove();
+    typeDigitalRecord?.remove();
   }
 
   const typeVinylRecord = recordCard.querySelector(".vinyl")!;
