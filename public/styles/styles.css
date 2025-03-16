@@ -186,6 +186,18 @@ ul {
   border-bottom: 2px solid var(--main-color-red);
 }
 
+.container {
+  display: flex;
+  padding: 45px 16px;
+
+  @media (width > 500px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 149px;
+  }
+}
+
 .records {
   display: grid;
   gap: 10px;
@@ -324,7 +336,10 @@ ul {
   display: none;
 
   @media (width > 500px) {
-    display: block;
+    display: flex;
+    margin-left: 47px;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
     margin-left: 47px;
   }
 }
@@ -358,12 +373,12 @@ div.record-of-the-month__info {
 }
 
 .record-of-the-month__name {
-  padding-right: 16px;
+  padding-left: 24px;
   color: rgba(31, 44, 77, 1);
+  text-align: start;
   font-size: 1.25rem;
   letter-spacing: 0px;
   font-weight: 600;
-  width: 163px;
   text-align: end;
 }
 
@@ -387,15 +402,38 @@ div.record-of-the-month__info {
   display: flex;
 }
 
-.container {
-  display: flex;
-  padding: 45px 16px;
-
+.sidebar__title {
   @media (width > 500px) {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 0 149px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--main-color);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    padding-top: 66px;
+    margin: 0;
+  }
+}
+
+.sidebar__list {
+  @media (width > 500px) {
+    list-style-image: url("/images/Ellipse.svg");
+    list-style-position: inside;
+  }
+}
+
+.sidebar__list-item {
+  @media (width > 500px) {
+    padding-bottom: 8px;
+  }
+}
+
+.sidebar__list-text {
+  @media (width > 500px) {
+    padding-left: 28px;
+    font-size: 0.875rem;
+    color: rgba(107, 121, 153, 1);
+    font-weight: 500;
   }
 }
 
