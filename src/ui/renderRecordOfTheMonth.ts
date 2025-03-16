@@ -13,7 +13,7 @@ export const renderRecordOfTheMonthCard = (
   const infoRecord = recordOfTheMonthCard.querySelector(
     ".record-of-the-month__name"
   )!;
-  infoRecord.textContent = `${record.artist} ${record.name}`;
+  infoRecord.textContent = `${record.name} (${record.artist})`;
 
   const priceRecord = recordOfTheMonthCard.querySelector(
     ".record-of-the-month__price"
