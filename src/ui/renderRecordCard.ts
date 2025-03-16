@@ -7,7 +7,6 @@ export const renderRecordCard = (
   const recordCover = recordCard.querySelector(
     ".record-cover"
   ) as HTMLImageElement;
-
   recordCover.src = record.coverUrl;
   recordCover.alt = `${record.artist} ${record.name}`;
 
@@ -20,9 +19,7 @@ export const renderRecordCard = (
   }
 
   const priceRecord = recordCard.querySelector(".price")!;
-  if (record.price) {
-    priceRecord.textContent = `$${record.price.toString()}`;
-  }
+  priceRecord.textContent = `$${record.price.toString()}`;
 
   const discountRecord = recordCard.querySelector(".record-discount")!;
   if (!record.originalPrice) {
