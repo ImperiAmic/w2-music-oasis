@@ -125,7 +125,7 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 66px;
+    padding-bottom: 60px;
     padding-left: 149px;
     padding-right: 149px;
   }
@@ -147,6 +147,7 @@ ul {
     font-size: 2.25rem;
     line-height: 40px;
     letter-spacing: 0px;
+    padding: 0;
   }
 }
 
@@ -309,71 +310,78 @@ ul {
   }
 }
 
-@media (width > 500px) {
-  .sidebar {
+.sidebar {
+  display: none;
+
+  @media (width > 500px) {
     display: block;
-  }
-
-  .record-of-the-month {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
     margin-left: 47px;
-    width: 359px;
   }
+}
 
-  .record-of-the-month__title {
-    color: rgba(31, 44, 77, 1);
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin: 0;
-  }
+.record-of-the-month {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 359px;
+}
 
-  .record-of-the-month__cover {
-    border-radius: 5px;
-    width: auto;
-  }
+.record-of-the-month__title {
+  color: rgba(31, 44, 77, 1);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+}
 
-  div.record-of-the-month__info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-around;
-  }
+.record-of-the-month__cover {
+  border-radius: 5px;
+  width: auto;
+}
 
-  .record-of-the-month__name {
-    padding-right: 16px;
-    color: rgba(31, 44, 77, 1);
-    font-size: 1.25rem;
-    letter-spacing: 0px;
-    font-weight: 600;
-    width: 163px;
-    text-align: end;
-  }
+div.record-of-the-month__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+}
 
-  .record-of-the-month__price {
-    color: rgba(31, 44, 77, 1);
-    font-size: 1.25rem;
-    letter-spacing: 0px;
-    font-weight: 700;
-  }
+.record-of-the-month__name {
+  padding-right: 16px;
+  color: rgba(31, 44, 77, 1);
+  font-size: 1.25rem;
+  letter-spacing: 0px;
+  font-weight: 600;
+  width: 163px;
+  text-align: end;
+}
 
-  .record-actions__sidebar {
-    display: flex;
-    justify-content: space-around;
-    height: 24px;
-    width: 115px;
-    border: none;
-    margin: 0;
-  }
+.record-of-the-month__price {
+  color: rgba(31, 44, 77, 1);
+  font-size: 1.25rem;
+  letter-spacing: 0px;
+  font-weight: 700;
+}
 
-  .record-of-the-month__card {
-    display: flex;
-  }
+.record-actions__sidebar {
+  display: flex;
+  justify-content: space-around;
+  height: 24px;
+  width: 115px;
+  border: none;
+  margin: 0;
+}
 
-  .container {
+.record-of-the-month__card {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  padding: 45px 16px;
+
+  @media (width > 500px) {
     width: 100%;
     display: flex;
     justify-content: center;
