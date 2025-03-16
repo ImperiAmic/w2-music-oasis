@@ -421,12 +421,9 @@ div.record-of-the-month__info {
   @media (width > 500px) {
     list-style-image: url("/images/Ellipse.svg");
     list-style-position: inside;
-  }
-}
-
-.sidebar__list-item {
-  @media (width > 500px) {
-    padding-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 }
 
