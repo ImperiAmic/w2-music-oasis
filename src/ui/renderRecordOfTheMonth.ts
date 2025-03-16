@@ -22,7 +22,7 @@ export const renderRecordOfTheMonthCard = (
 };
 
 export const renderRecordOfTheMonth = (records: Record[]): void => {
-  const sidebar = document.querySelector(".sidebar");
+  const recordOfTheMonth = document.querySelector(".record-of-the-month");
   const dummyRecord = document.querySelector(
     ".record-of-the-month"
   ) as HTMLElement;
@@ -30,7 +30,7 @@ export const renderRecordOfTheMonth = (records: Record[]): void => {
   records.forEach((record) => {
     if (record.isRecordOfTheMonth) {
       renderRecordOfTheMonthCard(record, dummyRecord);
-      sidebar?.appendChild(dummyRecord);
+      recordOfTheMonth?.appendChild(dummyRecord);
     }
   });
 };
