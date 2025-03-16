@@ -322,16 +322,6 @@ ul {
   padding: 0;
 }
 
-@media (width > 500px) {
-  .container-header {
-    height: 90px;
-
-    h1 {
-      display: inline;
-    }
-  }
-}
-
 .sidebar {
   display: none;
 
@@ -443,9 +433,11 @@ div.record-of-the-month__info {
   padding: 20px 16px 16px;
 
   @media (width > 500px) {
+    margin: 0 auto;
     display: flex;
     max-height: 326px;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 20px 150px 16px;
   }
 }
 
@@ -532,6 +524,7 @@ div.record-of-the-month__info {
   line-height: 1.25rem;
   letter-spacing: 0.063rem;
   text-transform: uppercase;
+  color: var(--main-color);
 }
 
 .footer__contacts {
