@@ -1,6 +1,4 @@
 import { records } from "../records/data.js";
-import { Record } from "../records/types.js";
-import { renderRecordCard } from "./renderRecordCard.js";
 import { renderRecordsList } from "./renderRecordsList.js";
 
 export const filters = document.querySelectorAll(".main-header__filter");
