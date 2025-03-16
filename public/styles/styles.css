@@ -333,7 +333,10 @@ ul {
   display: none;
 
   @media (width > 500px) {
-    display: block;
+    display: flex;
+    margin-left: 47px;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
     margin-left: 47px;
   }
 }
@@ -367,12 +370,12 @@ div.record-of-the-month__info {
 }
 
 .record-of-the-month__name {
-  padding-right: 16px;
+  padding-left: 24px;
   color: rgba(31, 44, 77, 1);
+  text-align: start;
   font-size: 1.25rem;
   letter-spacing: 0px;
   font-weight: 600;
-  width: 163px;
   text-align: end;
 }
 
