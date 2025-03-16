@@ -1,5 +1,7 @@
 :root {
   --main-color: #1f2c4d;
+  --main-red: #cf1e1f;
+  --secundary-color: #6b7999;
 }
 
 * {
@@ -163,17 +165,22 @@ ul {
 .main-header__filter {
   font-family: inherit;
   background: none;
+  font-family: inherit;
   font-size: 1.125rem;
   font-weight: 700;
-  color: rgba(107, 121, 153, 1);
+  color: var(--secundary-color);
   cursor: pointer;
   border: 2px solid transparent;
   padding: 0;
+
+  @media (width > 500px) {
+    font-size: 1.25rem;
+  }
 }
 
-.main-header__filter--active:active {
-  color: rgba(31, 44, 77, 1);
-  border-bottom: 2px solid rgba(207, 30, 31, 1);
+.filter--active {
+  color: var(--main-color);
+  border-bottom: 2px solid var(--main-red);
 }
 
 .records {
