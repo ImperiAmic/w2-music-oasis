@@ -1,17 +1,4 @@
 import { Record } from "../records/types.js";
-import { renderRecordCard } from "./renderRecordCard.js";
-
-/* export const renderRecordOfTheMonth = (records: Record[]): void => {
-  const recordOfTheMonth = document.querySelector(
-    ".record-of-the-month__card"
-  ) as HTMLElement;
-
-  records.forEach((record) => {
-    if (record.isRecordOfTheMonth) {
-      renderRecordCard(record, recordOfTheMonth);
-    }
-  });
-}; */
 
 export const renderRecordOfTheMonthCard = (
   record: Record,
