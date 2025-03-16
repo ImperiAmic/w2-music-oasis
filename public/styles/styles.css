@@ -183,6 +183,18 @@ ul {
   border-bottom: 2px solid var(--main-red);
 }
 
+.container {
+  display: flex;
+  padding: 45px 16px;
+
+  @media (width > 500px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 149px;
+  }
+}
+
 .records {
   display: grid;
   gap: 10px;
@@ -384,14 +396,37 @@ div.record-of-the-month__info {
   display: flex;
 }
 
-.container {
-  display: flex;
-  padding: 45px 16px;
-
+.sidebar__title {
   @media (width > 500px) {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 0 149px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--main-color);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    padding-top: 66px;
+    margin: 0;
+  }
+}
+
+.sidebar__list {
+  @media (width > 500px) {
+    list-style-image: url("/images/Ellipse.svg");
+    list-style-position: inside;
+  }
+}
+
+.sidebar__list-item {
+  @media (width > 500px) {
+    padding-bottom: 8px;
+  }
+}
+
+.sidebar__list-text {
+  @media (width > 500px) {
+    padding-left: 28px;
+    font-size: 0.875rem;
+    color: rgba(107, 121, 153, 1);
+    font-weight: 500;
   }
 }
